@@ -6,10 +6,12 @@ namespace PracticeDelegate
     {
         static void Main(string[] args)
         {
-            iPropertychanged account = new Account(1000);
+            Account account = new Account(1000);
             account.Propertychanged += ChangeDetector;
 
             account.Put(250, "Почтальон Печкин");
+
+            Console.ReadLine();
         }
         static void ChangeDetector(object sender, PropertyeventArgs e)
         {

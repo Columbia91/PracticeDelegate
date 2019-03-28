@@ -3,7 +3,7 @@
     public class Account : iPropertychanged
     {
         public event PropertyeventHandler Propertychanged;
-        private int Sum { get; set; }
+        public int Sum { get; private set; }
         public Account(int sum)
         {
             Sum = sum;
